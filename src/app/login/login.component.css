@@ -1,0 +1,20 @@
+body
+{
+
+
+position: relative;
+}
+.in
+{
+    width:250px;
+    height:250px;
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.form-control
+{
+    width: 200px;
+}

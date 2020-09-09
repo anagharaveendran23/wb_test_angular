@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div style="text-align:center">
+    <h1>
+      {{ title }}!
+    </h1>
+    <p>Page:{{ records.page }}</p>
+   <p>Per Page:{{ records.per_page }}</p>
+   <p>Total:{{ records.total }}</p>
+   <p>Total Page:{{ records.total_pages }}</p>
+
+    <table border="1">
+      <tr>
+        <th>Id</th>
+        <th>Email</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Avathar</th>
+        
+    </tr>
+    <tr *ngFor="let row of records | async">
+      <td> {{ row.id }} </td>
+      <td> {{ row.email }} </td>
+      <td> {{ row.first_name }} </td>
+      <td> {{ row.last_name }} </td>
+      <td> {{ row.avathar }} </td>
+
+    </tr>
+  </table>
+  
+</div>
+
+
+<app-footer></app-footer>
+  
